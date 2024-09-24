@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="435.0" prefWidth="488.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="StudentManagement.NewStudent">
+   <children>
+      <Label layoutX="150.0" layoutY="16.0" text="Pridėti mokinį">
+         <font>
+            <Font size="28.0" />
+         </font>
+      </Label>
+      <Label layoutX="144.0" layoutY="80.0" text="Tėvai" />
+      <Button layoutX="143.0" layoutY="331.0" mnemonicParsing="false" onAction="#createStudent" text="IŠSAUGOTI" />
+      <Button fx:id="closeWindow" layoutX="275.0" layoutY="331.0" mnemonicParsing="false" onAction="#exit" text="ATŠAUKTI" />
+      <TextField fx:id="newMokinioVardas" layoutX="146.0" layoutY="189.0" prefHeight="26.0" prefWidth="202.0" />
+      <TextField fx:id="newMokinioPavarde" layoutX="146.0" layoutY="236.0" prefHeight="26.0" prefWidth="202.0" />
+      <TextField fx:id="newMokinioGimimoData" layoutX="146.0" layoutY="285.0" prefHeight="26.0" prefWidth="202.0" />
+      <Label layoutX="146.0" layoutY="126.0" text="Klasė" />
+      <Label layoutX="146.0" layoutY="171.0" text="Mokinio vardas" />
+      <Label layoutX="145.0" layoutY="218.0" text="Mokinio pavardė" />
+      <Label layoutX="146.0" layoutY="267.0" text="Mokinio gimimo data" />
+      <ComboBox fx:id="parentsList" layoutX="145.0" layoutY="99.0" prefHeight="26.0" prefWidth="202.0" />
+      <ComboBox fx:id="classList" layoutX="145.0" layoutY="144.0" prefHeight="26.0" prefWidth="202.0" />
+      <Hyperlink layoutX="352.0" layoutY="100.0" onAction="#parentSelectionPrompt" text="Tėvai ne sąraše?" underline="true" />
+   </children>
+</AnchorPane>

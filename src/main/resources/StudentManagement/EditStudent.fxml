@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="467.0" prefWidth="428.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="StudentManagement.EditStudent">
+   <children>
+      <Text layoutX="105.0" layoutY="35.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mokinio atnaujinimas">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Text>
+      <Text layoutX="124.0" layoutY="78.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tevai" />
+      <Text layoutX="125.0" layoutY="136.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Klasė" />
+      <Text layoutX="125.0" layoutY="196.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mokinio vardas" />
+      <Text layoutX="125.0" layoutY="250.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mokinio pavardė" />
+      <Text layoutX="124.0" layoutY="299.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Gimimo data" />
+      <Button layoutX="136.0" layoutY="364.0" mnemonicParsing="false" onAction="#updateInfo" text="Atnaujinti" />
+      <Button fx:id="closeWindow" layoutX="221.0" layoutY="364.0" mnemonicParsing="false" onAction="#exitEdit" text="Eiti atgal" />
+      <ComboBox fx:id="parentsList" layoutX="123.0" layoutY="88.0" prefHeight="26.0" prefWidth="211.0" />
+      <ComboBox fx:id="classList" layoutX="124.0" layoutY="147.0" prefHeight="26.0" prefWidth="174.0" />
+      <TextField fx:id="studentNameField" layoutX="124.0" layoutY="203.0" prefHeight="26.0" prefWidth="174.0" />
+      <TextField fx:id="studentLastNameField" layoutX="124.0" layoutY="255.0" prefHeight="26.0" prefWidth="174.0" />
+      <TextField fx:id="studentBirthDateField" layoutX="124.0" layoutY="306.0" prefHeight="26.0" prefWidth="174.0" />
+   </children>
+</AnchorPane>

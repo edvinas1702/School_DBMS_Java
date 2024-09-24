@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="205.0" prefWidth="339.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ClassManagement.ClassDetailedInformation">
+
+    <children>
+        <Text layoutX="94.0" layoutY="96.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Auklėtojo (-s) vardas:" />
+        <Label fx:id="currentTeacherName" layoutX="218.0" layoutY="83.0" text="Label" />
+        <Button layoutX="273.0" layoutY="14.0" mnemonicParsing="false" onAction="#quitWindow" text="ATGAL" />
+      <Label fx:id="currentTeacherLastName" layoutX="218.0" layoutY="104.0" text="Label" />
+      <Text layoutX="93.0" layoutY="117.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Auklėtojo (-s) pavardė:" />
+    </children>
+
+
+</AnchorPane>

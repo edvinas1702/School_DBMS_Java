@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="454.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="TeacherManagement.NewTeacher">
+
+    <children>
+    <Label layoutX="132.0" layoutY="16.0" text="Pridėti mokytoją">
+        <font>
+            <Font size="28.0" />
+        </font>
+    </Label>
+    <TextField fx:id="newTeacherName" layoutX="134.0" layoutY="98.0" prefHeight="26.0" prefWidth="202.0" />
+    <Label layoutX="135.0" layoutY="80.0" text="Mokytojo vardas" />
+    <Button layoutX="144.0" layoutY="301.0" mnemonicParsing="false" onAction="#createTeacher" text="IŠSAUGOTI" />
+    <Button fx:id="closeWindow" layoutX="249.0" layoutY="301.0" mnemonicParsing="false" onAction="#exit" text="ATŠAUKTI" />
+    <TextField fx:id="newTeacherLastName" layoutX="134.0" layoutY="144.0" prefHeight="26.0" prefWidth="202.0" />
+    <TextField fx:id="newTeacherPhoneNumber" layoutX="134.0" layoutY="189.0" prefHeight="26.0" prefWidth="202.0" />
+    <TextField fx:id="newTeacherEmail" layoutX="134.0" layoutY="236.0" prefHeight="26.0" prefWidth="202.0" />
+    <Label layoutX="134.0" layoutY="126.0" text="Mokytojo pavardė" />
+    <Label layoutX="134.0" layoutY="171.0" text="Mokytojo telefono nr." />
+    <Label layoutX="133.0" layoutY="218.0" text="Mokytojo el. paštas" />
+    </children>
+
+</AnchorPane>

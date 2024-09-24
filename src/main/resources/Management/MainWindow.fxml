@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Management.MainWindow">
+   <children>
+      <Button fx:id="studentManagementBtn" layoutX="28.0" layoutY="73.0" mnemonicParsing="false" onAction="#studentManagement" prefHeight="58.0" prefWidth="158.0" text="MOKINIAI">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Text layoutX="187.0" layoutY="49.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MOKYKLOS DB">
+         <font>
+            <Font size="34.0" />
+         </font>
+      </Text>
+      <Button layoutX="28.0" layoutY="152.0" mnemonicParsing="false" onAction="#teacherManagement" prefHeight="58.0" prefWidth="158.0" text="MOKYTOJAI">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button layoutX="28.0" layoutY="230.0" mnemonicParsing="false" onAction="#parentManagement" prefHeight="58.0" prefWidth="158.0" text="TĖVAI">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button layoutX="28.0" layoutY="304.0" mnemonicParsing="false" onAction="#classManagement" prefHeight="58.0" prefWidth="158.0" text="KLASĖS">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

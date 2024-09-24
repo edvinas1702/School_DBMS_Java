@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="427.0" prefWidth="1080.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ParentManagement.ParentManagement">
+    <children>
+        <Label layoutX="13.0" layoutY="27.0" text="Tėvų paieška pagal motinos pavardę:" />
+        <TextField fx:id="searchMothersLastNameField" layoutX="14.0" layoutY="50.0" prefHeight="26.0" prefWidth="194.0" />
+        <Button layoutX="221.0" layoutY="50.0" mnemonicParsing="false" onAction="#searchParentsByLastName" text="IEŠKOTI" />
+        <Button layoutX="296.0" layoutY="50.0" mnemonicParsing="false" onAction="#clearSearch" text="ATŠAUKTI" />
+        <Button layoutX="968.0" layoutY="176.0" mnemonicParsing="false" onAction="#addParents" prefHeight="26.0" prefWidth="81.0" text="PRIDĖTI" />
+        <Button layoutX="968.0" layoutY="258.0" mnemonicParsing="false" onAction="#deleteParents" prefHeight="26.0" prefWidth="81.0" text="PAŠALINTI" />
+        <Button layoutX="1017.0" layoutY="11.0" mnemonicParsing="false" onAction="#quitWindow" text="ATGAL" />
+        <TableView fx:id="parentList" layoutX="14.0" layoutY="101.0" prefHeight="326.0" prefWidth="923.0">
+            <columns>
+                <TableColumn fx:id="motinosVardasColumn" prefWidth="122.20001792907715" text="MOTINOS VARDAS" />
+                <TableColumn fx:id="motinosPavardeColumn" prefWidth="136.0" text="MOTINOS PAVARDĖ" />
+                <TableColumn fx:id="motinosTelNrColumn" prefWidth="164.800048828125" text="MOTINOS TELEFONO NR." />
+            <TableColumn fx:id="tevuAdresas" prefWidth="165.39999389648438" text="ADRESAS" />
+            <TableColumn fx:id="tevoVardasColumn" minWidth="0.0" prefWidth="90.0" text="TĖVO VARDAS" />
+            <TableColumn fx:id="tevoPavardeColumn" prefWidth="108.800048828125" text="TĖVO PAVARDĖ" />
+            <TableColumn fx:id="tevoTelNrColumn" prefWidth="133.5999755859375" text="TĖVO TELEFONO NR." />
+            </columns>
+        </TableView>
+        <Button layoutX="969.0" layoutY="218.0" mnemonicParsing="false" onAction="#editParents" text="ATNAUJINTI" />
+      <Button layoutX="961.0" layoutY="362.0" mnemonicParsing="false" onAction="#parentSelection" text="Pasirinkti tėvus" />
+    </children>
+</AnchorPane>

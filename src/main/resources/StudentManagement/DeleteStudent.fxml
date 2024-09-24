@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="279.0" prefWidth="371.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="StudentManagement.DeleteStudent">
+   <children>
+      <Text layoutX="77.0" layoutY="64.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ar tikrai norite pašalinti?">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <Text layoutX="130.0" layoutY="115.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Vardas:" />
+      <Text layoutX="130.0" layoutY="147.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Pavardė:" />
+      <Label fx:id="currentStudentName" layoutX="184.0" layoutY="102.0" text="Label" />
+      <Label fx:id="currentStudentLastName" layoutX="184.0" layoutY="134.0" text="Label" />
+      <Button layoutX="110.0" layoutY="181.0" mnemonicParsing="false" onAction="#delete" text="TAIP" />
+      <Button layoutX="181.0" layoutY="181.0" mnemonicParsing="false" onAction="#exit" text="ATŠAUKTI" />
+   </children>
+</AnchorPane>

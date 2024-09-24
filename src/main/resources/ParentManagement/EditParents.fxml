@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="524.0" prefWidth="470.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ParentManagement.EditParents">
+
+    <children>
+        <Text layoutX="96.0" layoutY="37.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tėvų informacijos atnaujinimas">
+            <font>
+                <Font size="21.0" />
+            </font>
+        </Text>
+        <Text layoutX="146.0" layoutY="84.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Motinos vardas" />
+        <Text layoutX="146.0" layoutY="138.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Motinos pavardė" />
+        <Text layoutX="145.0" layoutY="185.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Motinos telefono nr." />
+        <Button layoutX="153.0" layoutY="436.0" mnemonicParsing="false" onAction="#updateInfo" text="Atnaujinti" />
+        <Button fx:id="closeWindow" layoutX="239.0" layoutY="436.0" mnemonicParsing="false" onAction="#exitEdit" text="Eiti atgal" />
+        <TextField fx:id="motherNameField" layoutX="145.0" layoutY="91.0" prefHeight="26.0" prefWidth="174.0" />
+        <TextField fx:id="motherLastNameField" layoutX="145.0" layoutY="143.0" prefHeight="26.0" prefWidth="174.0" />
+        <TextField fx:id="motherPhoneNrField" layoutX="145.0" layoutY="192.0" prefHeight="26.0" prefWidth="174.0" />
+        <TextField fx:id="parentAddressField" layoutX="145.0" layoutY="239.0" prefHeight="26.0" prefWidth="174.0" />
+        <Text layoutX="145.0" layoutY="232.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tėvų adresas" />
+      <TextField fx:id="fatherNameField" layoutX="145.0" layoutY="290.0" prefHeight="26.0" prefWidth="174.0" />
+      <Text layoutX="145.0" layoutY="283.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tėvo vardas" />
+      <TextField fx:id="fatherLastNameField" layoutX="145.0" layoutY="339.0" prefHeight="26.0" prefWidth="174.0" />
+      <Text layoutX="145.0" layoutY="332.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tėvo pavardė" />
+      <TextField fx:id="fatherPhoneNrField" layoutX="145.0" layoutY="385.0" prefHeight="26.0" prefWidth="174.0" />
+      <Text layoutX="145.0" layoutY="378.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tėvo tel. nr." />
+    </children>
+
+</AnchorPane>

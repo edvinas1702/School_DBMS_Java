@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="338.0" prefWidth="364.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ClassManagement.ClassManagement">
+
+    <children>
+        <Label layoutX="14.0" layoutY="26.0" text="Klasių paieška:" />
+        <TextField fx:id="searchClassField" layoutX="14.0" layoutY="50.0" prefHeight="26.0" prefWidth="106.0" />
+        <Button layoutX="136.0" layoutY="50.0" mnemonicParsing="false" onAction="#searchClass" prefHeight="26.0" prefWidth="58.0" text="IEŠKOTI" />
+        <Button layoutX="208.0" layoutY="50.0" mnemonicParsing="false" onAction="#clearSearch" prefHeight="26.0" prefWidth="69.0" text="ATŠAUKTI" />
+        <Button layoutX="149.0" layoutY="147.0" mnemonicParsing="false" onAction="#addClass" prefHeight="26.0" prefWidth="81.0" text="PRIDĖTI" />
+        <Button layoutX="149.0" layoutY="229.0" mnemonicParsing="false" onAction="#deleteClass" prefHeight="26.0" prefWidth="81.0" text="PAŠALINTI" />
+        <Button layoutX="307.0" layoutY="7.0" mnemonicParsing="false" onAction="#quitWindow" text="ATGAL" />
+        <TableView fx:id="classList" layoutX="14.0" layoutY="101.0" prefHeight="239.0" prefWidth="106.0">
+            <columns>
+                <TableColumn fx:id="klasesColumn" prefWidth="102.7999906539917" text="KLASĖ" />
+            </columns>
+        </TableView>
+        <Button layoutX="150.0" layoutY="189.0" mnemonicParsing="false" onAction="#editClass" text="ATNAUJINTI" />
+      <Button layoutX="134.0" layoutY="285.0" mnemonicParsing="false" onAction="#detailedInformation" prefHeight="26.0" prefWidth="113.0" text="Detali informacija" />
+    </children>
+
+</AnchorPane>

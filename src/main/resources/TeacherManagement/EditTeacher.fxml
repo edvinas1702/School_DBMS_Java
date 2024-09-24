@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="488.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="TeacherManagement.EditTeacher">
+    <children>
+        <Text layoutX="128.0" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mokytojo atnaujinimas">
+            <font>
+                <Font size="23.0" />
+            </font>
+        </Text>
+        <Text layoutX="148.0" layoutY="84.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mokytojo vardas" />
+        <Text layoutX="148.0" layoutY="138.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mokytojo pavardė" />
+        <Text layoutX="147.0" layoutY="185.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mokytojo tel. nr." />
+        <Button layoutX="159.0" layoutY="283.0" mnemonicParsing="false" onAction="#updateInfo" text="Atnaujinti" />
+        <Button fx:id="closeWindow" layoutX="245.0" layoutY="283.0" mnemonicParsing="false" onAction="#exitEdit" text="Eiti atgal" />
+        <TextField fx:id="teacherNameField" layoutX="147.0" layoutY="91.0" prefHeight="26.0" prefWidth="174.0" />
+        <TextField fx:id="teacherLastNameField" layoutX="147.0" layoutY="143.0" prefHeight="26.0" prefWidth="174.0" />
+        <TextField fx:id="teacherPhoneNrField" layoutX="147.0" layoutY="192.0" prefHeight="26.0" prefWidth="174.0" />
+      <TextField fx:id="teacherEmailField" layoutX="147.0" layoutY="239.0" prefHeight="26.0" prefWidth="174.0" />
+      <Text layoutX="147.0" layoutY="232.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mokytojo el. paštas" />
+    </children>
+</AnchorPane>

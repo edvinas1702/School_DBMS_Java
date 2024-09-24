@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="335.0" prefWidth="374.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ClassManagement.EditClass">
+
+    <children>
+        <Text layoutX="91.0" layoutY="35.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Klasės atnaujinimas">
+            <font>
+                <Font size="23.0" />
+            </font>
+        </Text>
+        <Text layoutX="104.0" layoutY="78.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Auklėtoja (-s)" />
+        <Text layoutX="105.0" layoutY="152.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Klasė" />
+        <Button layoutX="116.0" layoutY="229.0" mnemonicParsing="false" onAction="#updateInfo" text="Atnaujinti" />
+        <Button fx:id="closeWindow" layoutX="201.0" layoutY="229.0" mnemonicParsing="false" onAction="#exitEdit" text="Eiti atgal" />
+        <ComboBox fx:id="teacherList" layoutX="103.0" layoutY="88.0" prefHeight="26.0" prefWidth="174.0" />
+        <TextField fx:id="classField" layoutX="104.0" layoutY="159.0" prefHeight="26.0" prefWidth="174.0" />
+    </children>
+
+</AnchorPane>

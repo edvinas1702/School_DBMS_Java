@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="503.0" prefWidth="463.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ParentManagement.NewParents">
+
+    <children>
+        <Label layoutX="154.0" layoutY="14.0" text="Pridėti tėvus">
+            <font>
+                <Font size="28.0" />
+            </font>
+        </Label>
+        <TextField fx:id="newMotherName" layoutX="133.0" layoutY="88.0" prefHeight="26.0" prefWidth="202.0" />
+        <Label layoutX="134.0" layoutY="70.0" text="Motinos vardas" />
+        <Button layoutX="145.0" layoutY="416.0" mnemonicParsing="false" onAction="#createParents" text="IŠSAUGOTI" />
+        <Button fx:id="closeWindow" layoutX="250.0" layoutY="416.0" mnemonicParsing="false" onAction="#exit" text="ATŠAUKTI" />
+        <TextField fx:id="newMotherLastName" layoutX="133.0" layoutY="134.0" prefHeight="26.0" prefWidth="202.0" />
+        <TextField fx:id="newMotherPhoneNr" layoutX="133.0" layoutY="179.0" prefHeight="26.0" prefWidth="202.0" />
+        <TextField fx:id="newParentAddress" layoutX="133.0" layoutY="226.0" prefHeight="26.0" prefWidth="202.0" />
+        <Label layoutX="133.0" layoutY="116.0" text="Motinos pavardė" />
+        <Label layoutX="133.0" layoutY="161.0" text="Motinos telefono nr." />
+        <Label layoutX="132.0" layoutY="208.0" text="Adresas" />
+      <TextField fx:id="newFatherName" layoutX="133.0" layoutY="276.0" prefHeight="26.0" prefWidth="202.0" />
+      <Label layoutX="132.0" layoutY="258.0" text="Tėvo vardas" />
+      <TextField fx:id="newFatherLastName" layoutX="133.0" layoutY="322.0" prefHeight="26.0" prefWidth="202.0" />
+      <Label layoutX="132.0" layoutY="304.0" text="Tėvo pavardė" />
+      <TextField fx:id="newFatherPhoneNr" layoutX="133.0" layoutY="373.0" prefHeight="26.0" prefWidth="202.0" />
+      <Label layoutX="132.0" layoutY="355.0" text="Tėvo telefono nr." />
+    </children>
+
+</AnchorPane>

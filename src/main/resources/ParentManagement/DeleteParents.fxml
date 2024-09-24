@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="354.0" prefWidth="416.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ParentManagement.DeleteParents">
+
+    <children>
+        <Text layoutX="108.0" layoutY="62.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ar tikrai norite pašalinti?">
+            <font>
+                <Font size="20.0" />
+            </font>
+        </Text>
+        <Text layoutX="110.0" layoutY="124.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Motinos vardas:" />
+        <Text layoutX="110.0" layoutY="147.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Motinos pavardė:" />
+        <Label fx:id="currentMothersName" layoutX="201.0" layoutY="111.0" text="Label" />
+        <Label fx:id="currentMothersLastName" layoutX="207.0" layoutY="134.0" text="Label" />
+        <Button layoutX="137.0" layoutY="234.0" mnemonicParsing="false" onAction="#delete" text="TAIP" />
+        <Button layoutX="208.0" layoutY="234.0" mnemonicParsing="false" onAction="#exit" text="ATŠAUKTI" />
+      <Text layoutX="110.0" layoutY="171.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tėvo vardas:" />
+      <Text layoutX="110.0" layoutY="195.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tėvo pavardė:" />
+      <Label fx:id="currentFathersName" layoutX="188.0" layoutY="158.0" text="Label" />
+      <Label fx:id="currentFathersLastName" layoutX="188.0" layoutY="182.0" text="Label" />
+    </children>
+
+</AnchorPane>
